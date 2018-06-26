@@ -1,0 +1,356 @@
+<!doctype html>
+<!--[if lt IE 7 ]><html itemscope itemtype="http://schema.org/Organization" id="ie6" class="ie ie-old" lang="en-US"><![endif]-->
+<!--[if IE 7 ]>   <html itemscope itemtype="http://schema.org/Organization" id="ie7" class="ie ie-old" lang="en-US"><![endif]-->
+<!--[if IE 8 ]>   <html itemscope itemtype="http://schema.org/Organization" id="ie8" class="ie ie-old" lang="en-US"><![endif]-->
+<!--[if IE 9 ]>   <html itemscope itemtype="http://schema.org/Organization" id="ie9" class="ie" lang="en-US"><![endif]-->
+<!--[if gt IE 9]><!--><html itemscope itemtype="http://schema.org/Organization" lang="en-US"><!--<![endif]-->
+<head>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <title>Merging Options - Smart Mastering</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64 96x96" href="/smart-mastering-core/favicon.ico">
+    <meta name="application-name" content="Smart Mastering - A Smart Mastering framework for MarkLogic">
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-6638631-15', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1879746318909687'); // Insert your pixel ID here.
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1879746318909687&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- DO NOT MODIFY -->
+    <!-- End Facebook Pixel Code -->
+    <link type="text/css" rel="stylesheet" href="/smart-mastering-core/assets/bundle.css">
+</head>
+<body class="">
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/smart-mastering-core">
+                  <span class="logo">
+                    <img src="/smart-mastering-core/images/logo-marklogic.svg" width="180px" height="38px" alt="MarkLogic" title="MarkLogic" scale="0">
+                  </span>
+                  Smart Mastering
+                  <img src="/smart-mastering-core/images/smart-mastering.svg" width="36x" height="36px">
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                        <li  >
+                            
+                            <a href="/smart-mastering-core/">Getting Started</a>
+                            
+                        </li>
+                    
+                        <li  >
+                            
+                            <a href="https://github.com/marklogic-community/smart-mastering-core">GitHub</a>
+                            
+                        </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="side-nav col-md-2 hide-small">
+          <div class="panel panel-default">
+  <div class="panel-heading">Navigation</div>
+  <ul class="list-group">
+  
+  <li  class="list-group-item"  >
+    
+    <a href="/smart-mastering-core/">Getting Started</a>
+    
+    
+  </li>
+  
+  <li  class="list-group-item"  >
+    
+    <a href="/smart-mastering-core/how-does-it-work/">How Does it Work?</a>
+    
+    
+  </li>
+  
+  <li  class="list-group-item"  >
+    
+    <a href="/smart-mastering-core/how-to-use/">How do I Use it?</a>
+    
+    
+  </li>
+  
+  <li  class="list-group-item"  >
+    
+    <a href="/smart-mastering-core/docs/">Docs</a>
+    
+    
+      <ul class="list-group">
+  
+  <li  class="list-group-item"  >
+    
+    <a href="/smart-mastering-core/docs/rest/">REST API</a>
+    
+    
+  </li>
+  
+  <li  class="list-group-item"  >
+    
+    <a href="/smart-mastering-core/docs/libraries/">Libraries</a>
+    
+    
+  </li>
+  
+  <li  class="list-group-item"  >
+    
+    <a href="/smart-mastering-core/docs/matching-options/">Matching Options</a>
+    
+    
+  </li>
+  
+  <li  class="list-group-item active"  >
+    
+    <a href="/smart-mastering-core/docs/merging-options/">Merging Options</a>
+    
+    
+  </li>
+  
+</ul>
+
+    
+  </li>
+  
+  <li  class="list-group-item"  >
+    
+    <a href="/smart-mastering-core/faqs/">FAQs</a>
+    
+    
+  </li>
+  
+  <li  class="list-group-item"  >
+    
+    <a href="https://github.com/marklogic-community/smart-mastering-core">Smart Mastering on GitHub</a>
+    
+    
+  </li>
+  
+</ul>
+
+</div>
+
+        </div>
+        <div class="col-md-10">
+          <h1 id="merging-options">Merging Options</h1>
+
+<p>Smart Mastering Core offers a configuration-driven merge capability. Merging
+takes two or more documents in the <code class="highlighter-rouge">mdm-content</code> collection (which holds the
+data that is available for search), moves them to an <code class="highlighter-rouge">mdm-archive</code> collection,
+and creates a new document combining the original two. The new combined document
+will be in the <code class="highlighter-rouge">mdm-content</code> collection. Merge configuration includes the
+properties to merge and how to combine them.</p>
+
+<h1 id="configuring-options">Configuring Options</h1>
+
+<p>Here’s an example of merge configuration options.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;options xmlns="http://marklogic.com/smart-mastering/survivorship/merging"&gt;
+  &lt;match-options&gt;mlw-match&lt;/match-options&gt;
+  &lt;property-defs&gt;
+    &lt;property namespace="" localname="IdentificationID" name="ssn"/&gt;
+    &lt;property namespace="" localname="PersonName" name="name"/&gt;
+    &lt;property namespace="" localname="Address" name="address"/&gt;
+    &lt;property namespace="" localname="PersonBirthDate" name="dob"/&gt;
+    &lt;property namespace="" localname="CaseStartDate" name="caseStartDate"/&gt;
+    &lt;property namespace="" localname="IncidentCategoryCodeDate" name="incidentDate"/&gt;
+    &lt;property namespace="" localname="PersonSex" name="sex"/&gt;
+  &lt;/property-defs&gt;
+  &lt;algorithms&gt;
+    &lt;algorithm name="name" function="name"/&gt;
+    &lt;algorithm name="address" function="address"/&gt;
+  &lt;/algorithms&gt;
+  &lt;merging&gt;
+    &lt;merge property-name="ssn" algorithm-ref="user-defined"&gt;
+      &lt;source-ref document-uri="docA" /&gt;
+    &lt;/merge&gt;
+    &lt;merge property-name="name"  max-values="1"&gt;
+      &lt;double-metaphone&gt;
+        &lt;distance-threshold&gt;50&lt;/distance-threshold&gt;
+      &lt;/double-metaphone&gt;
+      &lt;synonyms-support&gt;true&lt;/synonyms-support&gt;
+      &lt;thesaurus&gt;/mdm/config/thesauri/first-name-synonyms.xml&lt;/thesaurus&gt;
+      &lt;length weight="8" /&gt;
+    &lt;/merge&gt;
+    &lt;merge property-name="address" algorithm-ref="standard" max-values="1"&gt;
+      &lt;source-weights&gt;
+        &lt;source name="CRM" weight="10"&gt;&lt;/source&gt;
+      &lt;/source-weights&gt;
+    &lt;/merge&gt;
+    &lt;merge property-name="dob" algorithm-ref="standard" max-values="1"&gt;
+      &lt;source-weights&gt;
+        &lt;source name="Oracle" weight="10"&gt;&lt;/source&gt;
+      &lt;/source-weights&gt;
+    &lt;/merge&gt;
+    &lt;merge property-name="caseStartDate" algorithm-ref="standard" max-values="1"&gt;
+      &lt;source-weights&gt;
+        &lt;source name="CRM" weight="10"&gt;&lt;/source&gt;
+      &lt;/source-weights&gt;
+    &lt;/merge&gt;
+    &lt;merge property-name="incidentDate" algorithm-ref="standard" max-values="1"&gt;
+      &lt;length weight="10"/&gt;
+    &lt;/merge&gt;
+    &lt;merge property-name="sex" algorithm-ref="standard" max-values="1"&gt;
+      &lt;length weight="10"/&gt;
+    &lt;/merge&gt;
+  &lt;/merging&gt;
+&lt;/options&gt;
+</code></pre></div></div>
+
+<h3 id="match-options">Match Options</h3>
+
+<p>When calling <code class="highlighter-rouge">process:process-match-and-merge()</code>, match options are specified
+by the merge options used in the call. The value of the <code class="highlighter-rouge">match-options</code> element
+is the name under which a set of match options were previously stored.</p>
+
+<p>Calling the <code class="highlighter-rouge">sm:merge</code> service or <code class="highlighter-rouge">merging:save-merge-models-by-uri</code> does not
+require that the merge options be paired with a set of match options; the
+<code class="highlighter-rouge">match-options</code> element may be left out. This will not affect the merging
+process at all.</p>
+
+<h3 id="property-definitions">Property Definitions</h3>
+
+<p>When merging documents, all properties defined for an entity will be merged. The
+<code class="highlighter-rouge">property-defs/property</code> elements specify the properties where the process of
+merging values will be configured. The <code class="highlighter-rouge">namespace</code> and <code class="highlighter-rouge">localname</code> attributes
+specify an XML element or JSON property. The <code class="highlighter-rouge">name</code> attribute provides a
+nickname used to refer to this property in the rest of the configuration. The
+<code class="highlighter-rouge">name</code> attribute values must be unique within this configuration.</p>
+
+<h3 id="algorithms">Algorithms</h3>
+
+<p>As part of creating a merged document, the merge process identifies the values
+the source documents have for each property, then selects which of them will be
+preserved in the merged document. The <code class="highlighter-rouge">algorithms/algorithm</code> elements list
+algorithms you can use to combine property values, in addition to the
+<code class="highlighter-rouge">standard</code> algorithm, which implements the default behavior.</p>
+
+<p>An <code class="highlighter-rouge">algorithm</code> element must have <code class="highlighter-rouge">name</code> and <code class="highlighter-rouge">function</code> attributes. The <code class="highlighter-rouge">name</code>
+attribute is the name this algorithm will be referred to elsewhere in the
+configuration. The <code class="highlighter-rouge">function</code> attribute is the localname of the function that
+will be called. This element may also have an <code class="highlighter-rouge">at</code> attribute, indicating where
+to find the source code for this function, and a <code class="highlighter-rouge">namespace</code> attribute.</p>
+
+<h3 id="merging">Merging</h3>
+
+<p>The <code class="highlighter-rouge">merging/merge</code> elements define how values from the source documents will
+be combined in the merged document.</p>
+
+<h3 id="merge-element"><code class="highlighter-rouge">merge</code> Element</h3>
+
+<p>The <code class="highlighter-rouge">merge</code> element can have three attributes: <code class="highlighter-rouge">property-name</code>, <code class="highlighter-rouge">algorithm-ref</code>,
+and <code class="highlighter-rouge">max-values</code>. The <code class="highlighter-rouge">property-name</code> attribute must match the <code class="highlighter-rouge">name</code> attribute
+of one of the <code class="highlighter-rouge">property</code> elements defined under <code class="highlighter-rouge">property-defs</code>. The
+<code class="highlighter-rouge">algorithm-ref</code> attribute must match the <code class="highlighter-rouge">name</code> attribute of one of the
+<code class="highlighter-rouge">algorithm</code> elements. The <code class="highlighter-rouge">max-values</code> attribute is an integer indicating how
+many values for this property should be copied from source documents to the
+merged document.</p>
+
+<h4 id="standard-merging">Standard Merging</h4>
+
+<p>The standard algorithm will keep up to 99 values for each property. A <code class="highlighter-rouge">merge</code>
+element can specify a different number and can control the order in which the
+values are listed. The <code class="highlighter-rouge">merge</code> element for the standard algorithm can also
+specify a weighted preference for sources and a weight by which to prefer longer
+values. Any property that does not have a <code class="highlighter-rouge">merge</code> element or that has a <code class="highlighter-rouge">merge</code>
+element that does not specify an <code class="highlighter-rouge">algorithm-ref</code> will use the standard
+algorithm.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;merge property-name="name" max-values="1"&gt;
+    &lt;length weight="8" /&gt;
+    &lt;source-weights&gt;
+      &lt;source name="good-source" weight="2"/&gt;
+      &lt;source name="better-source" weight="4"/&gt;
+    &lt;/source-weights&gt;
+  &lt;/merge&gt;
+</code></pre></div></div>
+
+<p>None of the elements inside the <code class="highlighter-rouge">merge</code> element are required.</p>
+
+<h4 id="custom-merging">Custom Merging</h4>
+
+<p>To use a different algorithm, create a <code class="highlighter-rouge">merge</code> element with an <code class="highlighter-rouge">algorithm-ref</code>
+attribute that refers to one of the <code class="highlighter-rouge">algorithm</code> elements. The contents of the
+<code class="highlighter-rouge">merge</code> element will be passed into the merging function.</p>
+
+        </div>
+      </div>
+    </div>
+  </article>
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                    Copyright © 2016-2018 MarkLogic Corporation. All Rights Reserved. MARKLOGIC® is a registered trademark of MarkLogic Corporation.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--[if lt IE 9]>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="/smart-mastering-core/js/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="/smart-mastering-core/assets/bundle.js" id="1"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-79716597-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
+

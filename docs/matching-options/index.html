@@ -1,0 +1,409 @@
+<!doctype html>
+<!--[if lt IE 7 ]><html itemscope itemtype="http://schema.org/Organization" id="ie6" class="ie ie-old" lang="en-US"><![endif]-->
+<!--[if IE 7 ]>   <html itemscope itemtype="http://schema.org/Organization" id="ie7" class="ie ie-old" lang="en-US"><![endif]-->
+<!--[if IE 8 ]>   <html itemscope itemtype="http://schema.org/Organization" id="ie8" class="ie ie-old" lang="en-US"><![endif]-->
+<!--[if IE 9 ]>   <html itemscope itemtype="http://schema.org/Organization" id="ie9" class="ie" lang="en-US"><![endif]-->
+<!--[if gt IE 9]><!--><html itemscope itemtype="http://schema.org/Organization" lang="en-US"><!--<![endif]-->
+<head>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <title>Matching Options - Smart Mastering</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64 96x96" href="/smart-mastering-core/favicon.ico">
+    <meta name="application-name" content="Smart Mastering - A Smart Mastering framework for MarkLogic">
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-6638631-15', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1879746318909687'); // Insert your pixel ID here.
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1879746318909687&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- DO NOT MODIFY -->
+    <!-- End Facebook Pixel Code -->
+    <link type="text/css" rel="stylesheet" href="/smart-mastering-core/assets/bundle.css">
+</head>
+<body class="">
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/smart-mastering-core">
+                  <span class="logo">
+                    <img src="/smart-mastering-core/images/logo-marklogic.svg" width="180px" height="38px" alt="MarkLogic" title="MarkLogic" scale="0">
+                  </span>
+                  Smart Mastering
+                  <img src="/smart-mastering-core/images/smart-mastering.svg" width="36x" height="36px">
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                        <li  >
+                            
+                            <a href="/smart-mastering-core/">Getting Started</a>
+                            
+                        </li>
+                    
+                        <li  >
+                            
+                            <a href="https://github.com/marklogic-community/smart-mastering-core">GitHub</a>
+                            
+                        </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="side-nav col-md-2 hide-small">
+          <div class="panel panel-default">
+  <div class="panel-heading">Navigation</div>
+  <ul class="list-group">
+  
+  <li  class="list-group-item"  >
+    
+    <a href="/smart-mastering-core/">Getting Started</a>
+    
+    
+  </li>
+  
+  <li  class="list-group-item"  >
+    
+    <a href="/smart-mastering-core/how-does-it-work/">How Does it Work?</a>
+    
+    
+  </li>
+  
+  <li  class="list-group-item"  >
+    
+    <a href="/smart-mastering-core/how-to-use/">How do I Use it?</a>
+    
+    
+  </li>
+  
+  <li  class="list-group-item"  >
+    
+    <a href="/smart-mastering-core/docs/">Docs</a>
+    
+    
+      <ul class="list-group">
+  
+  <li  class="list-group-item"  >
+    
+    <a href="/smart-mastering-core/docs/rest/">REST API</a>
+    
+    
+  </li>
+  
+  <li  class="list-group-item"  >
+    
+    <a href="/smart-mastering-core/docs/libraries/">Libraries</a>
+    
+    
+  </li>
+  
+  <li  class="list-group-item active"  >
+    
+    <a href="/smart-mastering-core/docs/matching-options/">Matching Options</a>
+    
+    
+  </li>
+  
+  <li  class="list-group-item"  >
+    
+    <a href="/smart-mastering-core/docs/merging-options/">Merging Options</a>
+    
+    
+  </li>
+  
+</ul>
+
+    
+  </li>
+  
+  <li  class="list-group-item"  >
+    
+    <a href="/smart-mastering-core/faqs/">FAQs</a>
+    
+    
+  </li>
+  
+  <li  class="list-group-item"  >
+    
+    <a href="https://github.com/marklogic-community/smart-mastering-core">Smart Mastering on GitHub</a>
+    
+    
+  </li>
+  
+</ul>
+
+</div>
+
+        </div>
+        <div class="col-md-10">
+          <h1 id="matching-options">Matching Options</h1>
+
+<p>Smart Mastering Core offers a configuration-driven matching capability. The
+match process starts with a document (referred to as the “candidate” document)
+and looks for other documents that might describe the same entity. Match
+configuration includes the properties to look for, how to compare them, and what
+thresholds to use for taking action on the matches. Only the properties listed
+under the <code class="highlighter-rouge">scoring</code> element will be used to find and score potential matches. 
+The match process returns a relevance-ranked sequence of potential matches, based 
+on the weights you specify.</p>
+
+<h2 id="configuring-options">Configuring Options</h2>
+
+<p>Here’s an example of match configuration options.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;options xmlns="http://marklogic.com/smart-mastering/matcher"&gt;
+  &lt;property-defs&gt;
+    &lt;property namespace="" localname="IdentificationID" name="ssn"/&gt;
+    &lt;property namespace="" localname="PersonGivenName" name="first-name"/&gt;
+    &lt;property namespace="" localname="PersonSurName" name="last-name"/&gt;
+    &lt;property namespace="" localname="AddressPrivateMailboxText" name="addr1"/&gt;
+    &lt;property namespace="" localname="LocationCity" name="city"/&gt;
+    &lt;property namespace="" localname="LocationState" name="state"/&gt;
+    &lt;property namespace="" localname="LocationPostalCode" name="zip"/&gt;
+  &lt;/property-defs&gt;
+  &lt;algorithms&gt;
+    &lt;algorithm name="std-reduce" function="standard-reduction"/&gt;
+    &lt;algorithm name="std-reduce-query" function="standard-reduction-query"/&gt;
+    &lt;algorithm name="dbl-metaphone" function="double-metaphone"/&gt;
+  &lt;/algorithms&gt;
+  &lt;scoring&gt;
+    &lt;add property-name="ssn" weight="50"/&gt;
+    &lt;add property-name="last-name" weight="8"/&gt;
+    &lt;add property-name="first-name" weight="6"/&gt;
+    &lt;add property-name="addr1" weight="5"/&gt;
+    &lt;add property-name="city" weight="3"/&gt;
+    &lt;add property-name="state" weight="1"/&gt;
+    &lt;add property-name="zip" weight="3"/&gt;
+    &lt;expand property-name="first-name" algorithm-ref="thesaurus" weight="6"&gt;
+      &lt;thesaurus&gt;/mdm/config/thesauri/first-name-synonyms.xml&lt;/thesaurus&gt;
+      &lt;distance-threshold&gt;50&lt;/distance-threshold&gt;
+    &lt;/expand&gt;
+    &lt;expand property-name="last-name" algorithm-ref="dbl-metaphone" weight="8"&gt;
+      &lt;dictionary&gt;name-dictionary.xml&lt;/dictionary&gt;
+      &lt;!--defaults to 100 distance --&gt;
+    &lt;/expand&gt;
+    &lt;reduce algorithm-ref="std-reduce" weight="4"&gt;
+      &lt;all-match&gt;
+        &lt;property&gt;last-name&lt;/property&gt;
+        &lt;property&gt;addr1&lt;/property&gt;
+      &lt;/all-match&gt;
+    &lt;/reduce&gt;
+  &lt;/scoring&gt;
+  &lt;thresholds&gt;
+    &lt;threshold above="30" label="Possible Match"/&gt;
+    &lt;threshold above="50" label="Likely Match" action="notify"/&gt;
+    &lt;threshold above="68" label="Definitive Match" action="merge"/&gt;
+    &lt;!-- below 25 will be NOT-A-MATCH or no category --&gt;
+  &lt;/thresholds&gt;
+  &lt;tuning&gt;
+    &lt;max-scan&gt;200&lt;/max-scan&gt;
+  &lt;/tuning&gt;
+&lt;/options&gt;
+</code></pre></div></div>
+
+<h3 id="property-definitions">Property Definitions</h3>
+
+<p>The <code class="highlighter-rouge">property-defs/property</code> elements identify the elements that will be used to
+find matches for a document. Use the <code class="highlighter-rouge">namespace</code> and <code class="highlighter-rouge">localname</code> attributes to
+specify an XML element or JSON property. The <code class="highlighter-rouge">name</code> attribute acts as a nickname
+for this property in the rest of the configuration.</p>
+
+<h3 id="algorithms">Algorithms</h3>
+
+<p>The <code class="highlighter-rouge">algorithms/algorithm</code> elements list additional algorithms you can use to
+compare property values. The default approach is comparing for equality. To set
+up matching with your custom code, add an <code class="highlighter-rouge">algorithm</code> element with attributes
+<code class="highlighter-rouge">name</code>, <code class="highlighter-rouge">function</code>, <code class="highlighter-rouge">namespace</code>, and <code class="highlighter-rouge">at</code>. The <code class="highlighter-rouge">name</code> attribute is used to refer
+to this algorithm later in the configuration. The other three attributes are
+used to find the code.</p>
+
+<p>For an example, see <a href="https://github.com/marklogic-community/smart-mastering-core/blob/master/src/main/ml-modules/root/com.marklogic.smart-mastering/algorithms/zip.xqy">zip.xqy</a>.</p>
+
+<h3 id="scoring">Scoring</h3>
+
+<p>Matches are based on how many properties match, what algorithms are used to
+determine matches, and the weights placed on the properties. See the How Scoring
+Works section for more information about how match scores are calculated.</p>
+
+<h4 id="add-elements"><code class="highlighter-rouge">add</code> elements</h4>
+
+<p>This section really drives the matching process. For each <code class="highlighter-rouge">add</code> element, the
+matcher will add this element or property to the query used to find other
+documents that match the candidate document. The <code class="highlighter-rouge">property-name</code> attribute must
+match the <code class="highlighter-rouge">name</code> attribute of a <code class="highlighter-rouge">property</code> element defined under
+<code class="highlighter-rouge">property-defs</code>. The <code class="highlighter-rouge">weight</code> attribute is the number of points awarded to
+a potential match if the values match.</p>
+
+<h4 id="expand-elements"><code class="highlighter-rouge">expand</code> elements</h4>
+
+<p>To apply a different matching strategy, add an <code class="highlighter-rouge">extend</code> element. The
+<code class="highlighter-rouge">property-name</code> element must match the <code class="highlighter-rouge">name</code> attribute of a <code class="highlighter-rouge">property</code> element
+defined under <code class="highlighter-rouge">property-defs</code>. The <code class="highlighter-rouge">algorithm-ref</code> attribute must match the
+<code class="highlighter-rouge">name</code> attribute of an <code class="highlighter-rouge">algorithm</code> element under <code class="highlighter-rouge">algorithms</code>. Sub-elements
+under the <code class="highlighter-rouge">extend</code> element depend on the implementation of the function.</p>
+
+<h4 id="reduce-elements"><code class="highlighter-rouge">reduce</code> elements</h4>
+
+<p>In some cases, a combination of matching properties may suggest a match when
+there shouldn’t be one. Consider two relatives living together. When matched,
+two Person records have the same family name, same street address, city, and zip
+code. That might be enough points to trigger a match even though the two given
+names differ.</p>
+
+<p>The <code class="highlighter-rouge">reduce</code> element gives a way to back off the scores in such cases. The
+<code class="highlighter-rouge">algorithm-ref</code> attribute must match the <code class="highlighter-rouge">name</code> attribute of an <code class="highlighter-rouge">algorithm</code>
+element under <code class="highlighter-rouge">algorithms</code>. The <code class="highlighter-rouge">weight</code> attribute will be subtracted from the
+score if the algorithm matches.</p>
+
+<h3 id="thresholds">Thresholds</h3>
+
+<p>Smart-mastering-core can be configured to take different actions based on the
+match scores. Each <code class="highlighter-rouge">threshold</code> element has an <code class="highlighter-rouge">above</code> attribute, which is the
+minimum absolute score a match must have against the candidate document in order
+to reach that threshold. A <code class="highlighter-rouge">threshold</code> element may also have a <code class="highlighter-rouge">label</code> attribute
+and an <code class="highlighter-rouge">action</code> attribute. If the <code class="highlighter-rouge">action</code> attribute is “merge”, then the
+candidate document and any document that reaches this threshold will be
+automatically merged. For <code class="highlighter-rouge">action="notify"</code>, a notification will be recorded
+for a human reviewer.</p>
+
+<h3 id="tuning">Tuning</h3>
+
+<p>The <code class="highlighter-rouge">max-scan</code> element limits the number of potential matches that get
+processed. In the example configuration with <code class="highlighter-rouge">&lt;max-scan&gt;200&lt;/max-scan&gt;</code>,
+only the top 200 scoring potential matches will be merged or have notifications
+recorded.</p>
+
+<h2 id="how-scoring-works">How Scoring Works</h2>
+
+<p>High scores are relative to the configuration, rather than measured on an
+absolute scale. The maximum possible score is the sum of the weights of all of
+the weight attributes.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;scoring&gt;
+  &lt;add property-name="ssn" weight="50"/&gt;
+  &lt;add property-name="last-name" weight="8"/&gt;
+  &lt;add property-name="first-name" weight="6"/&gt;
+  &lt;add property-name="addr1" weight="5"/&gt;
+  &lt;add property-name="city" weight="3"/&gt;
+  &lt;add property-name="state" weight="1"/&gt;
+  &lt;add property-name="zip" weight="3"/&gt;
+  &lt;expand property-name="first-name" algorithm-ref="thesaurus" weight="6"&gt;
+    &lt;thesaurus&gt;/mdm/config/thesauri/first-name-synonyms.xml&lt;/thesaurus&gt;
+    &lt;distance-threshold&gt;50&lt;/distance-threshold&gt;
+  &lt;/expand&gt;
+  &lt;expand property-name="last-name" algorithm-ref="dbl-metaphone" weight="8"&gt;
+    &lt;dictionary&gt;name-dictionary.xml&lt;/dictionary&gt;
+    &lt;!--defaults to 100 distance --&gt;
+  &lt;/expand&gt;
+  &lt;reduce algorithm-ref="std-reduce" weight="4"&gt;
+    &lt;all-match&gt;
+      &lt;property&gt;last-name&lt;/property&gt;
+      &lt;property&gt;addr1&lt;/property&gt;
+    &lt;/all-match&gt;
+  &lt;/reduce&gt;
+&lt;/scoring&gt;
+</code></pre></div></div>
+
+<p>In the example configuration above, the maximum possible score is
+50+8+6+5+3+1+3+6+8-4=86. Thresholds must be adjusted based on these values.</p>
+
+<p>This process is run as a normal search, which control over the scoring. For more
+information about how search works in MarkLogic, see <a href="http://docs.marklogic.com/guide/performance/unfiltered#id_13165">Understanding the Search
+Process</a>. The match process uses the simple scoring
+option, with the property weight controlling how much influence each should
+have. To read more about how scoring works in MarkLogic, see <a href="http://docs.marklogic.com/guide/search-dev/relevance#chapter">Relevance Scores:
+Understanding and Customizing</a>.</p>
+
+<h2 id="saving-options">Saving Options</h2>
+
+<p>Matching options may be stored before starting the matching process. Doing so
+means that the client layer does not need to store and maintain the options.</p>
+
+<h3 id="rest">REST</h3>
+
+<p>To save match options using REST, POST them to <code class="highlighter-rouge">/v1/resource/sm-match-options</code>
+with <code class="highlighter-rouge">rs:name</code> as a URL parameter and the options in the body of the request.</p>
+
+<h3 id="xquerysjs">XQuery/SJS</h3>
+
+<p>To save match options using XQuery, import <code class="highlighter-rouge">matcher.xqy</code> and call the
+<code class="highlighter-rouge">matcher:save-options</code> function.</p>
+
+
+        </div>
+      </div>
+    </div>
+  </article>
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                    Copyright © 2016-2018 MarkLogic Corporation. All Rights Reserved. MARKLOGIC® is a registered trademark of MarkLogic Corporation.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--[if lt IE 9]>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="/smart-mastering-core/js/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="/smart-mastering-core/assets/bundle.js" id="1"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-79716597-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
+
